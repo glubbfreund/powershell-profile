@@ -1,5 +1,4 @@
 {
-    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "blocks": [
         {
             "alignment": "left",
@@ -17,11 +16,12 @@
                 },
                 {
                     "type": "root",
-                    "style": "powerline",
-                    "powerline_symbol": " ",
-                    "foreground": "#193549",
+                    "style": "diamond",
+                    "leading_diamond": "\ue0b6",
+                    "trailing_diamond": "\ue0b4",
+                    "foreground": "#191b1c",
                     "background": "#b8b814",
-                    "template": "\udb84\ude38 "
+                    "template": "\udb84\ude38"
                 },
                 {
                     "foreground": "#a140fc",
@@ -35,15 +35,16 @@
                 },
                 {
                     "type": "python",
-                    "style": "powerline",
-                    "powerline_symbol": " ",
+                    "style": "diamond",
+                    "leading_diamond": "\ue0b6",
+                    "trailing_diamond": "\ue0b4 ",
                     "properties": {
                         "display_mode": "environment",
                         "fetch_virtual_env": true,
                         "display_default": true,
                         "home_enabled": true
                     },
-                    "foreground": "#193549",
+                    "foreground": "#191b1c",
                     "background": "#3776ab",
                     "template": "\ue73c {{ if .Venv }}{{ .Venv }} {{ end }}"
                 },
@@ -55,7 +56,7 @@
                         "{{ if gt .Ahead 0 }}#8619e6{{ end }}",
                         "{{ if gt .Behind 0 }}#8619e6{{ end }}"
                     ],
-                    "foreground": "#193549",
+                    "foreground": "#191b1c",
                     "powerline_symbol": "\ue0b0",
                     "properties": {
                         "add_icon": "\uf916 ",
@@ -76,8 +77,10 @@
                         "tag_icon": "\u25b6 "
                     },
 
-                    "style": "plain",
-                    "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
+                    "style": "diamond",
+                    "leading_diamond": "\ue0b6",
+                    "trailing_diamond": "\ue0b4",
+                    "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
                     "type": "git"
                 }
             ],
