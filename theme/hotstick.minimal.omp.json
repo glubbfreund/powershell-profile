@@ -24,9 +24,9 @@
           "background": "#14b814",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#b8b814{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#6b14b8{{ end }}",
-            "{{ if gt .Ahead 0 }}#6b14b8{{ end }}",
-            "{{ if gt .Behind 0 }}#6b14b8{{ end }}"
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#8619e6{{ end }}",
+            "{{ if gt .Ahead 0 }}#8619e6{{ end }}",
+            "{{ if gt .Behind 0 }}#8619e6{{ end }}"
           ],
           "foreground": "#000000",
           "powerline_symbol": "\ue0b0",
