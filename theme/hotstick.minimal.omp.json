@@ -31,7 +31,7 @@
             "home_enabled": true
           },
           "foreground": "#100e23",
-          "background": "#ff8c00",
+          "background": "#3776ab",
           "template": "\ue73c {{ if .Venv }}{{ .Venv }} {{ end }}"
         },
         {
