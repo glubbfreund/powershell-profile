@@ -21,6 +21,20 @@
           "type": "path"
         },
         {
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": " ",
+          "properties": {
+            "display_mode": "environment",
+            "fetch_virtual_env": true,
+            "display_default": true,
+            "home_enabled": true
+          },
+          "foreground": "#100e23",
+          "background": "#ff8c00",
+          "template": "\ue73c {{ if .Venv }}{{ .Venv }} {{ end }}"
+        },
+        {
           "background": "#14b814",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#b8b814{{ end }}",
