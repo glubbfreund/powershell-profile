@@ -11,7 +11,6 @@
           "type": "text"
         },
         {
-          //"background": "#1f1a2c",
           "foreground": "#a140fc",
           "leading_diamond": "\uf178 ",
           "properties": {
@@ -51,7 +50,7 @@
         }
       ],
       "type": "prompt",
-      "vertical_offset": 1
+      "vertical_offset": 0
     }
   ],
   "console_title_template": "{{.Folder}}{{if .Root}} :: root{{end}} :: {{.Shell}}",
