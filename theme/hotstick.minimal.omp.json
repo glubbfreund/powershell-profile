@@ -38,14 +38,15 @@
             "commit_icon": "\u25b7 ",
             "fetch_stash_count": true,
             "fetch_status": true,
-            "fetch_upstream_icon": true,
+            "fetch_upstream_icon": false,
             "merge_icon": "\u25f4 ",
             "no_commits_icon": "",
             "rebase_icon": "\u2c62 ",
             "tag_icon": "\u25b6 "
           },
           "style": "plain",
-          "template": " \uf113 {{ .HEAD }} {{ .BranchStatus }} {{ if .Working.Changed }}{{ .Working.String }} {{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }}{{ end }}{{ if .Staging.Changed }}{{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}}{{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}}{{ .WorktreeCount }}{{ end }} ",
+          //"template": " \uf113 {{ .HEAD }} {{ .BranchStatus }} {{ if .Working.Changed }}{{ .Working.String }} {{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }}{{ end }}{{ if .Staging.Changed }}{{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}}{{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}}{{ .WorktreeCount }}{{ end }} ",
+          "template": " \uf113 {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
           "type": "git"
         }
       ],
