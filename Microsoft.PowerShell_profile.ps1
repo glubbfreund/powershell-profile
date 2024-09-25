@@ -1,5 +1,5 @@
 # OMS initialization and theme loading
-oh-my-posh init pwsh --config 'C:\Users\olive\Documents\WindowsPowerShell\theme\jiro.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Users\olive\Documents\WindowsPowerShell\theme\kapsoules.omp.json' | Invoke-Expression
 # Terminal icon module for colored icons with ls
 Import-Module -Name Terminal-Icons
 # Import module for better navigation
