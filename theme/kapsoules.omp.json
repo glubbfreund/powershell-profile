@@ -4,11 +4,11 @@
             "alignment": "left",
             "segments": [
                 {
-                    "foreground": "#30f76b",
+                    "foreground": "blue",
                     "foreground_templates": [
                         "{{ if .Error }}#ce4937{{ end }}"
                     ],
-                    "template": "\uf178 ",
+                    "template": "\ue70f ",
                     "type": "status",
                     "properties": {
                         "always_enabled": true
@@ -24,7 +24,7 @@
                     "template": "\udb84\ude38"
                 },
                 {
-                    "foreground": "#a140fc",
+                    "foreground": "magenta",
                     "leading_diamond": "\uf178 ",
                     "properties": {
                         "style": "folder"
