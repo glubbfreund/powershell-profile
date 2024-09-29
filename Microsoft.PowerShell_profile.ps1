@@ -12,5 +12,8 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 
+# Change inline prediction color
+Set-PSReadLineOption -Colors @{ InlinePrediction = "$([char]0x1b)[38;5;238m" }
+
 # Disable venv promt, using omp for that
 $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
