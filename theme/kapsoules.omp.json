@@ -4,7 +4,7 @@
             "alignment": "left",
             "segments": [
                 {
-                    "foreground": "blue",
+                    "foreground": "#016fb9",
                     "foreground_templates": [
                         "{{ if .Error }}#ce4937{{ end }}"
                     ],
@@ -24,7 +24,7 @@
                     "template": "\udb84\ude38"
                 },
                 {
-                    "foreground": "green",
+                    "foreground": "#afa98d",
                     "leading_diamond": "\uf178 ",
                     "properties": {
                         "style": "folder"
