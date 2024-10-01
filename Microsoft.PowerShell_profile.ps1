@@ -17,3 +17,6 @@ Set-PSReadLineOption -Colors @{ InlinePrediction = "$([char]0x1b)[38;5;238m" }
 
 # Disable venv promt, using omp for that
 $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
+
+# Run a fast fastfetch
+fastfetch

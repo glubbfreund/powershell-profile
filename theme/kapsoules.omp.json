@@ -24,7 +24,7 @@
                     "template": "\udb84\ude38"
                 },
                 {
-                    "foreground": "magenta",
+                    "foreground": "green",
                     "leading_diamond": "\uf178 ",
                     "properties": {
                         "style": "folder"
