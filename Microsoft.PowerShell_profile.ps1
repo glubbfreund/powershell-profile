@@ -1,5 +1,7 @@
 # OMS initialization and theme loading
-oh-my-posh init pwsh --config 'C:\Users\olive\Documents\WindowsPowerShell\theme\kapsoules.omp.json' | Invoke-Expression
+# oh-my-posh init pwsh --config 'C:\Users\olive\Documents\WindowsPowerShell\theme\kapsoules.omp.json' | Invoke-Expression
+# Starship
+Invoke-Expression (&starship init powershell)
 # Terminal icon module for colored icons with ls
 Import-Module -Name Terminal-Icons
 # Import module for better navigation
@@ -17,6 +19,3 @@ Set-PSReadLineOption -Colors @{ InlinePrediction = "$([char]0x1b)[38;5;238m" }
 
 # Disable venv promt, using omp for that
 $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
-
-# Run a fast fastfetch
-fastfetch
